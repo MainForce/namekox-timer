@@ -48,12 +48,12 @@ class Timer(Entrypoint):
             with Timeout(to_sleep, exception=False):
                 self.stopping_event.wait()
                 break
-            self.container.spawn_worker_thread(self, (), {}, res_handler=self._res_handler)
+            self.container.spawn_worker_thread(self, (), {}, res_handler=self.res_handler)
             self.finished_event.wait()
             self.finished_event.reset()
             to_sleep = next(interval)
     
-    def _res_handler(self, result, exc_info):
+    def res_handler(self, context, result, exc_info):
         self.finished_event.send(True)
         return result, exc_info
 
