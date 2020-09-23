@@ -4,6 +4,7 @@ bash install.sh
 ```
 
 # Example
+> ping.py
 ```python
 #! -*- coding: utf-8 -*-
 
@@ -26,9 +27,8 @@ class Ping(object):
 ```
 
 # Running
-```shell script
 > namekox run ping
-
+```shell script
 2020-09-19 11:16:17,800 DEBUG load service classes from ping
 2020-09-19 11:16:17,804 DEBUG load container class from namekox_core.core.service.container:ServiceContainer
 2020-09-19 11:16:17,804 DEBUG starting services ['ping']
