@@ -15,13 +15,13 @@ readme = open(os.path.join(curdir, 'README.md'), 'rb', 'utf-8').read()
 
 setup(
     name='namekox-timer',
-    version='1.0.0',
+    version='0.0.1',
     description='namekox timer',
     long_description=readme,
     author='forcemain',
     url='https://forcemain.github.io/',
     packages=find_packages(exclude=['test', 'test.*']),
-    install_requires=["namekox-core>=1.0.0"],
+    install_requires=["namekox-core>=0.0.1"],
     zip_safe=True,
     license='Apache License, Version 2.0',
     classifiers=[
