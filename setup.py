@@ -18,6 +18,7 @@ setup(
     version='0.0.1',
     description='namekox timer',
     long_description=readme,
+    long_description_content_type='text/markdown',
     author='forcemain',
     url='https://forcemain.github.io/',
     packages=find_packages(exclude=['test', 'test.*']),
